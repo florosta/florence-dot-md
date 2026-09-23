@@ -5,7 +5,7 @@ import satori from "satori";
 import { Resvg } from "@resvg/resvg-js";
 import { loadFonts } from "./lib/fonts.mjs";
 import { reactionDiffusionPng } from "./lib/reaction-diffusion.mjs";
-import { LABEL, HEADLINE, SUBHEAD, colors, h } from "./lib/theme.mjs";
+import { HEADLINE, colors, h } from "./lib/theme.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
@@ -56,44 +56,16 @@ async function main() {
       },
       h(
         "div",
-        { display: "flex", flexDirection: "column", maxWidth: 820 },
-        [
-          h(
-            "div",
-            {
-              fontFamily: "Geist Mono",
-              fontWeight: 500,
-              fontSize: 13,
-              color: colors.ink,
-              marginBottom: 10,
-            },
-            LABEL
-          ),
-          h(
-            "div",
-            {
-              fontFamily: "Instrument Serif",
-              fontWeight: 400,
-              fontSize: 38,
-              lineHeight: 1.04,
-              letterSpacing: -0.6,
-              color: colors.ink,
-            },
-            HEADLINE
-          ),
-          h(
-            "div",
-            {
-              marginTop: 12,
-              fontFamily: "Spline Sans",
-              fontWeight: 400,
-              fontSize: 16,
-              lineHeight: 1.4,
-              color: colors.body,
-            },
-            SUBHEAD
-          ),
-        ]
+        {
+          fontFamily: "Instrument Serif",
+          fontWeight: 400,
+          fontSize: 58,
+          lineHeight: 1.05,
+          letterSpacing: -1,
+          color: colors.ink,
+          maxWidth: 900,
+        },
+        HEADLINE
       ),
     ]
   );
