@@ -1,7 +1,7 @@
 import { PNG } from "pngjs";
 
-// Same Gray-Scott reaction-diffusion field as the hero's rd.js, ported to run
-// headlessly (plain typed-array math, no canvas) and rasterized to a PNG.
+// Gray-Scott reaction-diffusion field, run headlessly (plain typed-array math,
+// no canvas) and rasterized to a PNG. Used for the hero, OG and LinkedIn images.
 export function reactionDiffusionPng(w, h, softness = 0.55) {
   const n = w * h;
   const fg = [190, 208, 176];

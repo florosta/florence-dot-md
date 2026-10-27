@@ -20,7 +20,7 @@ async function main() {
   ]);
 
   const photoDataUri = `data:image/png;base64,${photo.toString("base64")}`;
-  // Same grid size as the live #rd canvas (index.html), so the pattern's
+  // Same grid size as the hero background (assets/hero-rd.png), so the pattern's
   // fill/spot statistics match the hero exactly; cropped to the OG aspect below.
   const bgDataUri = `data:image/png;base64,${reactionDiffusionPng(
     150,

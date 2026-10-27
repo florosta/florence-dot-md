@@ -2,11 +2,11 @@
   "name": "florence-dot-md",
   "version": "1.0.0",
   "description": "",
-  "main": "rd.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "og": "node scripts/generate-og.mjs",
-    "linkedin": "node scripts/generate-linkedin.mjs"
+    "linkedin": "node scripts/generate-linkedin.mjs",
+    "hero": "node scripts/generate-hero.mjs"
   },
   "repository": {
     "type": "git",
